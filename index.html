@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .movie-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .movie {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .movie:hover {
+            transform: scale(1.05);
+        }
+
+        .movie img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .movie-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .movie-description {
+            font-size: 1em;
+            color: #555;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            .movie {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Movie Hub</h1>
+    <p>Your Go-To Place for Latest Movies</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Now Showing</a>
+    <a href="#">Coming Soon</a>
+    <a href="#">Top Rated</a>
+    <a href="#">Contact Us</a>
+</nav>
+
+<div class="movie-container">
+    <div class="movie">
+        <img src="movie-poster1.jpg" alt="Movie Poster 1">
+        <h2 class="movie-title">Movie Title 1</h2>
+        <p class="movie-description">This is a short description of the movie. A thrilling adventure that keeps you on the edge of your seat!</p>
+    </div>
+    <div class="movie">
+        <img src="movie-poster2.jpg" alt="Movie Poster 2">
+        <h2 class="movie-title">Movie Title 2</h2>
+        <p class="movie-description">A heartwarming story of love, friendship, and resilience. Perfect for a weekend watch!</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Movie Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
